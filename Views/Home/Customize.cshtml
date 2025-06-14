@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Build Your Burger";
+}
+
+<div class="container py-4">
+    <h1 class="mb-4 text-center">Customize Your Burger <i class="bi bi-burger-fill"></i></h1>
+
+    <div class="form-panel">
+        <form method="post" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="bun" class="form-label"><i class="bi bi-filter-circle"></i> Choose Bun:</label>
+                <select id="bun" name="bun" class="form-select">
+                    <option>Sesame Seed</option>
+                    <option>Whole Wheat</option>
+                    <option>Brioche</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="patty" class="form-label"><i class="bi bi-filter-circle"></i> Choose Patty:</label>
+                <select id="patty" name="patty" class="form-select">
+                    <option>Beef</option>
+                    <option>Chicken</option>
+                    <option>Veggie</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="sauce" class="form-label"><i class="bi bi-filter-circle"></i> Choose Sauce:</label>
+                <select id="sauce" name="sauce" class="form-select">
+                    <option>Ketchup</option>
+                    <option>Mustard</option>
+                    <option>Mayo</option>
+                </select>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success btn-lg"><i class="bi bi-check-circle"></i> Make My Burger!</button>
+            </div>
+        </form>
+    </div> <div class="mt-4 text-center">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-outline-secondary me-2"><i class="bi bi-house"></i> Back to Home</a>
+        <a asp-action="Menu" asp-controller="Home" class="btn btn-outline-info"><i class="bi bi-book"></i> View Menu</a>
+    </div>
+</div>

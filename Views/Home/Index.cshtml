@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "DIY Burgers";
+}
+
+<div class="p-5 mb-4 bg-light rounded-3 text-center">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Build a Burger! <i class="bi bi-burger"></i></h1>
+        <p class="col-md-8 fs-4 mx-auto">Build your perfect burger by choosing ingredients.</p>
+        <div class="d-grid gap-2 d-md-block">
+            <a asp-action="Customize" asp-controller="Home" class="btn btn-primary btn-lg"><i class="bi bi-play-circle"></i> Start Building</a>
+            <a asp-action="Menu" asp-controller="Home" class="btn btn-outline-secondary btn-lg"><i class="bi bi-book"></i> View Menu</a>
+        </div>
+    </div>
+</div>
